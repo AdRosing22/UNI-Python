@@ -1,0 +1,37 @@
+import kivy
+from kivy.app import App #importerar app element
+from kivy.uix.label import Label #importerar Text som skrivs ut
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.textinput import TextInput
+from kivy.uix.button import Button
+
+            #import mediaplayer?
+                #play upon start and then rest in C#??
+                #else maybe go through the UNIX startup test??
+                #get in touch!
+
+from kivy.uix.widget import Widget
+from kivy.properties import ObjectProperty
+from kivy.uix.floatlayout import FloatLayout
+
+class MyGrid(Widget):
+    name = ObjectProperty(None)
+    email = ObjectProperty(None)
+
+    def button(self):
+        print("Name:", self.name.text, "email:", self.email.text)
+        self.name.text = ""
+        self.email.text = ""
+
+
+
+
+
+class BeerApp (App):
+    def build(self):
+        return MyGrid()
+
+
+
+if __name__ == "__main__":
+    BeerApp().run()
