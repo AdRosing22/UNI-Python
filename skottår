@@ -1,0 +1,26 @@
+#! Python3
+# filnamn: adro2000_3.3_v1.py3
+# Skrivet av: Adam Rosing
+# Skapat datum: 04-10-2020
+# Senast ändrat: 04-10-2020
+# Kurs: Grundläggande Datavetenskap
+# Handledare: Jan-Erik Jonsson, Jimmy Åhlander
+# Beskrivning: Berättar ifall ett årtal är skottår eller inte
+
+
+a = int(input("Ange år:"))
+
+if a % 4 != 0:
+       print("Inte skottår")
+else:
+     if a % 100 != 0:
+
+        print("Skottår")
+     else:
+
+        if a % 400 != 0:
+
+            print("Inte skottår")
+
+        else:
+            print("Skottår")
