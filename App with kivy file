@@ -1,0 +1,46 @@
+<MyGrid>
+
+    name: name
+    email: email
+
+
+
+    GridLayout:
+        cols:1
+        size: root.width , root.height
+
+
+        GridLayout:
+            cols:2
+
+
+
+            Label:
+                text: "Name"
+
+            TextInput:
+                id: name
+                multiline : False
+
+            Label:
+                text : "Email:"
+
+            TextInput:
+                id: email
+                multiline : False
+
+            Button:
+
+
+                text:"Submit"
+
+            Button:
+                text:"Return"
+
+
+
+
+
+<Button>:
+    font_size:40
+    color:0.3,0.6,0.7,1
