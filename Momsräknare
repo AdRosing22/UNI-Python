@@ -1,0 +1,22 @@
+#! Python3
+# filnamn: adro2000_1.3_v1.py3
+# Skrivet av: Adam Rosing
+# Skapat datum: 04-10-2020
+# Senast ändrat: 04-10-2020
+# Kurs: Grundläggande Datavetenskap
+# Handledare: Jan-Erik Jonsson, Jimmy Åhlander
+# Beskrivning: programmet räknar priset på en vara inkl.Moms
+
+
+pris_utan_moms = input("Infoga det momsfria priset i kronor:")
+
+momssats = input("infoga momsatsen i decimalform, t.ex. 25%=1.25:")
+
+pris_utan_moms = float(pris_utan_moms)
+
+momssats = float(momssats)
+        # visar att momssatsen är ett flyttal
+
+moms = pris_utan_moms * momssats
+
+print("Priset",pris_utan_moms,"med en momssats",momssats,"ger det totala priset:",moms,"Kr")
