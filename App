@@ -4,12 +4,6 @@ from kivy.uix.label import Label #importerar Text som skrivs ut
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
-
-            #import mediaplayer?
-                #play upon start and then rest in C#??
-                #else maybe go through the UNIX startup test??
-                #get in touch!
-
 from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty
 from kivy.uix.floatlayout import FloatLayout
