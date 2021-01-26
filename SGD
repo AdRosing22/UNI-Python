@@ -9,17 +9,17 @@
 
 print("För att ta reda på största gemensamma divisorn mellan två tal följ instruktionerna nedan")
 
-M = input("Skriv det större talet:")
-N = input("Skriv det mindre talet:")
+tal1 = input("Skriv det större talet:")
+tal2 = input("Skriv det mindre talet:")
 
-M = int(M)
-N = int(N)
+tal1 = int(tal1)
+tal2 = int(tal2)
 
-R = M % N
+R = tal1 % tal2
 
 while R != 0:
-    M = N
-    N = R
-    R = M % N
+    tal1 = tal2
+    tal2 = R
+    R = tal1 % tal2
 else:
-    print(N)
+    print(tal2)
